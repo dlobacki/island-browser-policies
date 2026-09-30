@@ -1,11 +1,12 @@
 resource "island_policy" "finance" {
   name        = "Finance"
-  description = "Finance group. Stricter downloads; approved banking and ERP portals only."
+  description = "Finance group. Stricter downloads; approved banking and ERP portals only. [ITD-2292]"
   priority    = 20
   groups      = ["Finance"]
 
   allowed_urls = [
     "acme.com",
+    "app.coupa.com",
     "app.netsuite.com",
     "chase.com",
     "concur.com",
