@@ -1,6 +1,6 @@
 resource "island_policy" "finance" {
   name        = "Finance"
-  description = "Finance group. Stricter downloads; approved banking and ERP portals only."
+  description = "Finance group. Stricter downloads; approved banking and ERP portals only. [ITD-2289]"
   priority    = 20
   groups      = ["Finance"]
 
@@ -11,6 +11,7 @@ resource "island_policy" "finance" {
     "concur.com",
     "docs.google.com",
     "okta.com",
+    "portal.vendor-x.com",
     "slack.com",
     "workday.com",
   ]
