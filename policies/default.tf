@@ -1,22 +1,20 @@
 resource "island_policy" "default" {
-  name        = "Default"
-  description = "Baseline policy applied to every Island user."
+  name        = "Third-party default"
+  description = "Baseline policy for every third-party user connecting through Island."
   priority    = 100
 
   allowed_urls = [
     "acme.com",
-    "docs.google.com",
     "okta.com",
     "slack.com",
-    "workday.com",
     "zoom.us",
   ]
 
   downloads  = "block"
-  clipboard  = "allow_with_watermark"
+  clipboard  = "block"
   screenshot = "block"
   print      = "block"
   dlp_scan   = true
 
-  session_timeout_minutes = 120
+  session_timeout_minutes = 60
 }

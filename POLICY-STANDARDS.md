@@ -1,6 +1,6 @@
 # Island policy standards
 
-Agreed between IT and InfoSec. Requests that fit these rules can be approved by IT
+Agreed between IT and InfoSec for third-party (contractor and agency) access through Island. Requests that fit these rules can be approved by IT
 alone. Anything else needs InfoSec approval before code is changed.
 
 ## Pre-approved (IT can approve)
