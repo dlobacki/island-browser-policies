@@ -1,6 +1,6 @@
 resource "island_policy" "contractors" {
   name        = "Contractors"
-  description = "Contract staff on Acme projects. Approved work apps only; no data leaves the browser. [ITN-21]"
+  description = "Contract staff on Acme projects. Approved work apps only; no data leaves the browser."
   priority    = 20
   groups      = ["Contractors"]
 
@@ -13,7 +13,7 @@ resource "island_policy" "contractors" {
     "slack.com",
   ]
 
-  downloads  = "allow"
+  downloads  = "block"
   clipboard  = "allow_with_watermark"
   screenshot = "block"
   print      = "block"
