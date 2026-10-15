@@ -1,6 +1,6 @@
 resource "island_policy" "agency_partners" {
   name        = "Agency Partners"
-  description = "Outside agencies and vendors. Shared workspaces only; downloads blocked."
+  description = "Outside agencies and vendors. Shared workspaces only; downloads blocked. [ITN-12]"
   priority    = 30
   groups      = ["Agency Partners"]
 
@@ -12,7 +12,7 @@ resource "island_policy" "agency_partners" {
     "slack.com",
   ]
 
-  downloads  = "block"
+  downloads  = "allow"
   clipboard  = "allow_with_watermark"
   screenshot = "block"
   print      = "allow_with_watermark"
