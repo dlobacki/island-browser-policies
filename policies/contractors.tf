@@ -13,7 +13,7 @@ resource "island_policy" "contractors" {
     "slack.com",
   ]
 
-  downloads  = "allow"
+  downloads  = "block"
   clipboard  = "allow_with_watermark"
   screenshot = "block"
   print      = "block"
